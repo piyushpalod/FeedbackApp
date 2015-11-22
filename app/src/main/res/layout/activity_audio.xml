@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Audio Recording"
+        android:id="@+id/textView"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Audio FeedBack"
+        android:id="@+id/textView2"
+        android:textColor="#ff3eff0f"
+        android:textSize="35dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/icon"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record"
+        android:id="@+id/button"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginTop="59dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="play"
+        android:id="@+id/button3"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignRight="@+id/textView"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button3"
+        android:text="Only first 30 sec of audio will be captured."/>
+
+</RelativeLayout>
