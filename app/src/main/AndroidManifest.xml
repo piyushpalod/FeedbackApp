@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".Audio"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" >
@@ -23,8 +23,20 @@
 
         <activity android:name=".DisplayMessageActivity"
             android:label="disple">
-
         </activity>
+
+        <activity android:name=".SingleUserActivity"
+            android:label="Entity">
+        </activity>
+
+        <activity android:name=".Audio"
+            android:label="Audio Feedback">
+        </activity>
+
+        <activity android:name=".VideocameraActivity"
+            android:label="Video Feedback">
+        </activity>
+
     </application>
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -39,4 +51,6 @@
 
     <uses-feature android:name="android.hardware.camera" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 </manifest>
